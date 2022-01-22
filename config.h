@@ -64,7 +64,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 /* static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };*/
 static const char *dmenucmd[] = { "rofi", "-show", "drun", "-theme", "~/software/rofi-collection/nord/nord.rasi", NULL };
 /* static const char *termcmd[]  = { "st", NULL };*/
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "xfce4-terminal", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

@@ -23,3 +23,23 @@ cp /etc/X11/xinit/xinitrc .xinitrc
 - https://zhuanlan.zhihu.com/p/112536524
 - https://zhuanlan.zhihu.com/p/346719806?ivk_sa=1024320u
 
+## Configuration
+### Alsa
+```sh
+yay -S alas-utils
+```
+Run `alsamixer` and press `F6` to check default sound card.
+
+`cat ~/.asoundrc`:
+```sh
+defaults.pcm.card 1
+defaults.pcm.device 0
+defaults.ctl.card 1
+```
+```sh
+amixer sget Master
+```
+
+
+## Other
+- [My slstatus](https://github.com/keer2345/slstatus)
