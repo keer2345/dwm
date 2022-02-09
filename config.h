@@ -65,9 +65,22 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "rofi", "-show", "drun", "-theme", "~/software/rofi-collection/nord/nord.rasi", NULL };
 /* static const char *termcmd[]  = { "st", NULL };*/
 static const char *termcmd[]  = { "xfce4-terminal", NULL };
+/* volume */
+static const char *volDown[]  = { "/home/keer/software/dwm/volDown.sh", NULL };
+static const char *volUp[]  = { "/home/keer/software/dwm/volUp.sh", NULL };
+static const char *volToggle[]  = { "/home/keer/software/dwm/volToggle.sh", NULL };
+/* light */
+static const char *lightDown[]  = { "/home/keer/software/dwm/lightUp.sh", NULL };
+static const char *lightUp[]  = { "/home/keer/software/dwm/lightUp.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY,                       XK_F1,      spawn,          {.v = volDown } },
+	{ MODKEY,                       XK_F2,      spawn,          {.v = volUp } },
+	{ MODKEY,                       XK_F3,      spawn,          {.v = volToggle } },
+	{ MODKEY,                       XK_F5,      spawn,          {.v = lightDown } },
+	{ MODKEY,                       XK_F6,      spawn,          {.v = lightUp } },
+
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
