@@ -70,7 +70,7 @@ static const char *volDown[]  = { "/home/keer/software/dwm/volDown.sh", NULL };
 static const char *volUp[]  = { "/home/keer/software/dwm/volUp.sh", NULL };
 static const char *volToggle[]  = { "/home/keer/software/dwm/volToggle.sh", NULL };
 /* light */
-static const char *lightDown[]  = { "/home/keer/software/dwm/lightUp.sh", NULL };
+static const char *lightDown[]  = { "/home/keer/software/dwm/lightDown.sh", NULL };
 static const char *lightUp[]  = { "/home/keer/software/dwm/lightUp.sh", NULL };
 
 static Key keys[] = {

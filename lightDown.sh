@@ -1,2 +1,2 @@
 #!/bin/bash
-light -U 10
+brightnessctl set 10%-
